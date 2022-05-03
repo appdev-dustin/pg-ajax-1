@@ -1,0 +1,1 @@
+$("#<%= dom_id(@like) %>").replaceWith("<%= j(render "likes/form", like: @like.photo.likes.build(fan: current_user)) %>");
